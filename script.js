@@ -6,7 +6,7 @@ request1.send();
 request1.onload = function(){
     var data = JSON.parse(request1.response);
 
-    for(let sample of data)
+    for(let sample of data) //(let sample in data) can also be used
     {
         console.log(sample.name);
     }
